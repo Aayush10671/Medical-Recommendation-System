@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog - Health Care Center</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        body {
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            min-height: 100vh;
+            color: #e2e8f0;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        .navbar {
+            background: rgba(10, 14, 39, 0.95) !important;
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+        }
+
+        .logo { width: 50px; height: 50px; margin-left: 2px; }
+
+        .myimg {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #6366f1;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: #fff !important;
+            margin-left: 1rem;
+        }
+
+        .nav-link {
+            color: #cbd5e1 !important;
+            font-weight: 500;
+        }
+
+        .nav-link:hover { color: #a5b4fc !important; }
+
+        .btn-outline-success {
+            border: 2px solid #6366f1;
+            color: #a5b4fc;
+            border-radius: 8px;
+        }
+
+        .btn-outline-success:hover {
+            background: #6366f1;
+            color: white;
+        }
+
+        .page-title {
+            color: #fff;
+            font-size: 3rem;
+            font-weight: 800;
+            text-align: center;
+            margin: 3rem 0 2rem;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .blog-post {
+            background: rgba(10, 14, 39, 0.8);
+            border: 2px solid rgba(99, 102, 241, 0.3);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px);
+            border-color: rgba(99, 102, 241, 0.5);
+        }
+
+        .blog-post h2 {
+            color: #a5b4fc;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-date {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-post p {
+            color: #cbd5e1;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .page-title { font-size: 2rem; }
+            .blog-post { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <div class="logo">
+                <img class="myimg" src="{{ url_for('static', filename='img.png') }}" alt="Logo">
+            </div>
+            <a class="navbar-brand" href="/">Health Center</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/developer">Developer</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/blog">Blog</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="page-title">Health Blog</h1>
+
+    <div class="content">
+        <div class="blog-post">
+            <h2>Understanding AI in Healthcare</h2>
+            <div class="blog-date">December 29, 2024</div>
+            <p>Artificial Intelligence is revolutionizing healthcare by enabling faster and more accurate diagnoses. Our AI-powered system analyzes symptoms to help users understand potential health conditions and take appropriate action.</p>
+        </div>
+
+        <div class="blog-post">
+            <h2>The Importance of Early Detection</h2>
+            <div class="blog-date">December 15, 2024</div>
+            <p>Early detection of diseases can significantly improve treatment outcomes. By identifying symptoms early and seeking professional medical advice, many conditions can be managed more effectively.</p>
+        </div>
+
+        <div class="blog-post">
+            <h2>How to Use Symptom Checkers Effectively</h2>
+            <div class="blog-date">December 1, 2024</div>
+            <p>Symptom checkers like our Health Care Center are tools to help you understand your health better. Always be specific with your symptoms, and remember to consult healthcare professionals for accurate diagnosis and treatment.</p>
+        </div>
+
+        <div class="blog-post">
+            <h2>Preventive Healthcare Tips</h2>
+            <div class="blog-date">November 20, 2024</div>
+            <p>Prevention is better than cure. Regular exercise, balanced diet, adequate sleep, and stress management are key factors in maintaining good health. Stay proactive about your health by monitoring symptoms and getting regular check-ups.</p>
+        </div>
+
+        <div class="blog-post">
+            <h2>The Role of Diet in Disease Prevention</h2>
+            <div class="blog-date">November 5, 2024</div>
+            <p>A balanced diet plays a crucial role in preventing many diseases. Our system provides personalized dietary recommendations based on predicted conditions to help you maintain optimal health through nutrition.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

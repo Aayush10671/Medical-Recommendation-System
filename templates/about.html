@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About - Health Care Center</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        body {
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            min-height: 100vh;
+            color: #e2e8f0;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        .navbar {
+            background: rgba(10, 14, 39, 0.95) !important;
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+        }
+
+        .logo { width: 50px; height: 50px; margin-left: 2px; }
+
+        .myimg {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #6366f1;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: #fff !important;
+            margin-left: 1rem;
+        }
+
+        .nav-link {
+            color: #cbd5e1 !important;
+            font-weight: 500;
+        }
+
+        .nav-link:hover { color: #a5b4fc !important; }
+
+        .btn-outline-success {
+            border: 2px solid #6366f1;
+            color: #a5b4fc;
+            border-radius: 8px;
+        }
+
+        .btn-outline-success:hover {
+            background: #6366f1;
+            color: white;
+        }
+
+        .page-title {
+            color: #fff;
+            font-size: 3rem;
+            font-weight: 800;
+            text-align: center;
+            margin: 3rem 0 2rem;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .card {
+            background: rgba(10, 14, 39, 0.8);
+            border: 2px solid rgba(99, 102, 241, 0.3);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            color: #cbd5e1;
+        }
+
+        .card h2 {
+            color: #a5b4fc;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .page-title { font-size: 2rem; }
+            .card { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <div class="logo">
+                <img class="myimg" src="{{ url_for('static', filename='img.png') }}" alt="Logo">
+            </div>
+            <a class="navbar-brand" href="/">Health Center</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/developer">Developer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="page-title">About Us</h1>
+
+    <div class="content">
+        <div class="card">
+            <h2>🏥 Our Mission</h2>
+            <p>Health Care Center is an AI-powered disease prediction system that helps you understand your health better. Simply enter your symptoms, and our machine learning model will provide potential diagnoses along with health recommendations.</p>
+        </div>
+
+        <div class="card">
+            <h2>⚡ What We Do</h2>
+            <p>We analyze your symptoms using advanced AI algorithms and provide:</p>
+            <p>✓ Disease predictions based on symptoms<br>
+               ✓ Detailed health descriptions<br>
+               ✓ Precautions and safety tips<br>
+               ✓ Medication suggestions<br>
+               ✓ Diet and workout recommendations</p>
+        </div>
+
+        <div class="card">
+            <h2>⚠️ Important Note</h2>
+            <p><strong>This is an AI tool and not a replacement for professional medical advice.</strong> Always consult qualified healthcare professionals for accurate diagnosis and treatment. In emergencies, contact your local emergency services immediately.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
