@@ -1,10 +1,10 @@
-Medical Disease Prediction System
+Medical Disease Prediction System:
 A web application that predicts possible diseases based on symptoms you enter. It also shows recommended precautions, medications, and diets.
 
 How It Works
-Enter your symptoms in the web page
-The system uses a machine learning model to predict possible diseases
-You get a detailed care plan with description, precautions, medication, and diet advice
+1.Enter your symptoms in the web page.
+2.The system uses a machine learning model to predict possible diseases
+3.You get a detailed care plan with description, precautions, medication, and diet advice
 
 What I Used
 1.Python with Flask for the website backend
